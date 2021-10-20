@@ -5,12 +5,13 @@
 <h2>JavaScript Objects</h2>
 
 <script>
+    // displayInfo is a method, type/model/price is property, Honda/Civic/25000 is value
 var car = { 
     type: 'Honda', 
     model : 'Civic', 
     price : '25000', 
     displayInfo : function(){ 
-        console.log(`${} has many models but ${} is $${}`); 
+        console.log( `$(car.type) has many models but ${car.model} is $${car.price}`); 
     } 
 } 
 car.displayInfo();  
